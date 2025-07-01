@@ -1,25 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Dashboard Ilha Faceira</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      background: #ebe4d1;
-      overflow-x: hidden;
-    }
-    .bg-section {
+      height: 100%;
       width: 100vw;
-      min-height: 6480px; /* Altura total do seu background */
+      min-height: 6480px; /* Altura desejada do fundo */
+      background: #fafaf7;
+      overflow: hidden;    /* <- Impede scroll */
+    }
+    body {
+      width: 100vw;
+      min-height: 6480px;
       background-image: url('https://raw.githubusercontent.com/Gattiboni/Assets-Ilha-Faceira/main/background%20Dashboard%20Small.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center top;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      background-position: center top !important;
+      background-attachment: scroll;
+      image-rendering: auto;
+      -webkit-backface-visibility: hidden;
     }
   </style>
 </head>
 <body>
-  <div class="bg-section"></div>
 </body>
 </html>
